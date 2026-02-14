@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nagendra Hegde | Principal Member of Technical Staff
+title: Nagendra Hegde
 description: Principal Engineer with 10+ years of experience in distributed systems, AI infrastructure, and cloud scalability.
 ---
 
