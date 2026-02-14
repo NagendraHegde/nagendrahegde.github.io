@@ -42,7 +42,8 @@ Bengaluru, Karnataka | [Email](mailto:nagendrahegde4sdmcet@gmail.com) | [LinkedI
 
 ---
 
-## 🛠 Skills & Expertise## 🛠 Skills & Expertise {: #skills }
+<h2 id="skills">🛠 Skills & Expertise</h2>
+
 <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
 
   <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
@@ -64,7 +65,7 @@ Bengaluru, Karnataka | [Email](mailto:nagendrahegde4sdmcet@gmail.com) | [LinkedI
 
 ---
 
-## 💼 Professional Experience {: #experience }
+<h2 id="experience">💼 Professional Experience</h2>
 
 ### **Oracle India Pvt Ltd (OCI)** | Bengaluru, Karnataka
 **Principal Member of Technical Staff** *October 2025 – Present*
