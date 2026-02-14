@@ -1,24 +1,52 @@
 <style>
+  /* 1. ENABLE SMOOTH SCROLLING */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 2. LEANER HEADER (Overriding Cayman Theme) */
+  .page-header {
+    padding-top: 2rem !important;    /* Reduced from default large padding */
+    padding-bottom: 2rem !important; /* Reduced from default large padding */
+    background-image: linear-gradient(120deg, #2b5876, #4e4376); /* Optional: A more elegant deep blue/purple gradient */
+  }
+  .page-header h1 {
+    font-size: 2.2rem !important;   /* Smaller, more elegant font size */
+    margin-bottom: 0.5rem;
+  }
+  .page-header p {
+    font-size: 1rem !important;     /* Smaller description text */
+    margin-bottom: 0;
+  }
+
+  /* 3. STICKY NAVIGATION BAR */
   .site-nav {
-    background: #333;
-    padding: 10px;
+    background: #1e1e1e; /* Dark elegant background */
+    padding: 12px;
     text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   }
   .site-nav a {
-    color: white;
+    color: #ffffff;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: bold;
-    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    transition: color 0.3s;
   }
-  .site-nav a:hover { text-decoration: underline; }
+  .site-nav a:hover {
+    color: #42b983; /* Green accent on hover */
+    text-decoration: none;
+  }
 </style>
+
 <div class="site-nav">
   <a href="#">Home</a>
-  <a href="#-skills--expertise">Skills</a>
-  <a href="#-professional-experience">Experience</a>
-  <a href="https://linkedin.com/in/nagendra-hegde">LinkedIn</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="https://linkedin.com/in/nagendra-hegde" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
 </div>
