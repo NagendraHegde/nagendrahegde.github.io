@@ -101,3 +101,4 @@ description: Principal Engineer with 10+ years of experience in distributed syst
 **SDM College of Engineering and Technology (VTU)** *Bachelor of Engineering, Computer Science* *August 2011 – May 2015* | [cite_start]**GPA: 9.27** [cite: 40, 41]
 
 ---
+
