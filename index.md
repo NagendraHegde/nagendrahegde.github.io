@@ -29,10 +29,8 @@ description: Principal Engineer with 10+ years of experience in distributed syst
   "telephone": "+91 8553856116"
 }
 </script>
-
-# Nagendra Hegde
-**Principal Member of Technical Staff** Bengaluru, Karnataka | +91 8553856116  
-[Email](mailto:nagendrahegde4sdmcet@gmail.com) | [LinkedIn](https://linkedin.com/in/nagendra-hegde)
+**Principal Member of Technical Staff** 
+Bengaluru, Karnataka | [Email](mailto:nagendrahegde4sdmcet@gmail.com) | [LinkedIn](https://linkedin.com/in/nagendra-hegde)
 
 ---
 
