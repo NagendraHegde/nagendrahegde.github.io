@@ -44,12 +44,24 @@ Bengaluru, Karnataka | [Email](mailto:nagendrahegde4sdmcet@gmail.com) | [LinkedI
 
 ## 🛠 Skills & Expertise
 
-| Domain | Competencies |
-| :--- | :--- |
-| **Distributed Systems & Cloud** | Oracle Cloud Infrastructure, AWS, Microservices Architecture, Event-Driven Architecture, **Kafka** (Messaging Systems), Cloud Foundry, Docker. |
-| **AI & Developer Productivity** | AI-Assisted Engineering (**Cline**, **Oracle Code Assist**), Model Context Protocol (**MCP**) Servers, LLM-integrated Workflows, Automated Unit Test Generation. |
-| **Languages, DBs & Observability** | **Java (Expert)**, TypeScript, JavaScript, React.js, SQL, Oracle DB, PostgreSQL, NoSQL, Kibana, Lumberjack. |
-| **Leadership & Strategy** | Technical Roadmap Planning, Cross-Functional Leadership, **Hiring & Bar Raising**, Operational Excellence (MTTR Reduction), Stakeholder Management. |
+<div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+
+  <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <h3>☁️ Cloud & Systems</h3>
+    <p>Oracle OCI, AWS, Microservices, Kafka, Docker, Cloud Foundry</p>
+  </div>
+
+  <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <h3>🤖 AI & Productivity</h3>
+    <p>Cline, Oracle Code Assist, MCP Servers, GB200 Control Plane</p>
+  </div>
+
+  <div style="border: 1px solid #ddd; padding: 20px; border-radius: 8px; width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <h3>☕ Languages</h3>
+    <p><b>Java (Expert)</b>, TypeScript, React.js, SQL, PostgreSQL</p>
+  </div>
+
+</div>
 
 ---
 
