@@ -13,6 +13,11 @@ export type FeaturedWork = {
   name: string;
   kicker: string;
   summary: string;
+  caseStudy: {
+    problem: string;
+    approach: string;
+    impact: string;
+  };
   highlights: string[];
   tags: string[];
 };
@@ -25,7 +30,10 @@ export type ExperienceRole = {
 
 export type Experience = {
   company: string;
+  shortName: string;
+  logo: 'oracle' | 'autodesk' | 'sap';
   location: string;
+  overview: string;
   roles: ExperienceRole[];
 };
 
@@ -54,6 +62,10 @@ export type PortfolioProfile = {
     headline: string;
     summary: string;
     focusAreas: string[];
+    snapshot: Array<{
+      label: string;
+      value: string;
+    }>;
   };
   metrics: ImpactMetric[];
   featuredWork: FeaturedWork[];
@@ -70,10 +82,6 @@ export const portfolioProfile: PortfolioProfile = {
     email: 'nagendrahegde4sdmcet@gmail.com',
     phone: '+91 8553856116',
     links: [
-      {
-        label: 'Email',
-        href: 'mailto:nagendrahegde4sdmcet@gmail.com',
-      },
       {
         label: 'LinkedIn',
         href: 'https://linkedin.com/in/nagendra-hegde',
@@ -93,6 +101,24 @@ export const portfolioProfile: PortfolioProfile = {
       'Distributed systems reliability',
       'Developer productivity with LLM workflows',
       'Cloud administration modernization',
+    ],
+    snapshot: [
+      {
+        label: 'Base',
+        value: 'Bengaluru, Karnataka',
+      },
+      {
+        label: 'Organization',
+        value: 'OCI Compute',
+      },
+      {
+        label: 'Domain',
+        value: 'AI Infrastructure',
+      },
+      {
+        label: 'Level',
+        value: 'Principal Engineer',
+      },
     ],
   },
   metrics: [
@@ -126,6 +152,14 @@ export const portfolioProfile: PortfolioProfile = {
       kicker: 'OCI Compute AI Copilot',
       summary:
         "Co-defined the vision for OCI Compute's AI copilot for diagnostics and incident triage, led end-to-end Vuffi V1 delivery, and now help drive V2 through technical unblocking and incremental value planning with leadership.",
+      caseStudy: {
+        problem:
+          'OCI Compute operators need faster ways to reason through diagnostics and incident triage during high-pressure events.',
+        approach:
+          'Defined the Vuffi product direction, led V1 delivery, and shaped V2 around technical unblocking plus incremental leadership-aligned value.',
+        impact:
+          'Created the foundation for an AI-assisted operational workflow that can compress analysis time and improve incident handling confidence.',
+      },
       highlights: [
         'Defined a practical AI-assisted incident triage experience for OCI Compute operations.',
         'Led delivery from vision to V1 while keeping leadership aligned on incremental value.',
@@ -138,6 +172,14 @@ export const portfolioProfile: PortfolioProfile = {
       kicker: 'GPU AI Infrastructure',
       summary:
         "Authored the low-level design and co-developed a Java backend framework that maps APIs to nvos commands, executes them on target Nvidia GB200 devices, and returns real-time device output.",
+      caseStudy: {
+        problem:
+          'GPU AI infrastructure operations needed safer, API-driven access to live device command execution and output.',
+        approach:
+          'Designed a Java backend framework that maps operational APIs to nvos commands and pairs them with UI views.',
+        impact:
+          'Delivered essential operational capabilities for GB200 GPU infrastructure with real-time visibility.',
+      },
       highlights: [
         'Mapped operational APIs to direct device command execution.',
         'Led critical operational API implementation and corresponding UI views.',
@@ -150,6 +192,14 @@ export const portfolioProfile: PortfolioProfile = {
       kicker: 'Next-gen Admin Portal',
       summary:
         'Planned, led, and delivered C4PO enhancements while collaborating with support teams for $1B+ strategic accounts to improve large scale event and customer incident handling.',
+      caseStudy: {
+        problem:
+          'Operators were context-switching across legacy admin systems, slowing cross-service troubleshooting and customer incident response.',
+        approach:
+          'Moved compute administration workflows into C4PO and integrated telemetry, Jira, and Lumberjack logging.',
+        impact:
+          'Improved operator efficiency and contributed to a 10% reduction in overall Mean Time to Resolve.',
+      },
       highlights: [
         'Moved legacy admin workflows into a React-based internal administration platform.',
         'Integrated compute administration with telemetry, Jira, and Lumberjack logging.',
@@ -161,7 +211,11 @@ export const portfolioProfile: PortfolioProfile = {
   experience: [
     {
       company: 'Oracle India Pvt Ltd (OCI)',
+      shortName: 'Oracle OCI',
+      logo: 'oracle',
       location: 'Bengaluru, Karnataka',
+      overview:
+        'Current platform home for OCI Compute reliability, AI-assisted operations, GPU infrastructure workflows, and admin modernization.',
       roles: [
         {
           title: 'Principal Member of Technical Staff',
@@ -189,7 +243,11 @@ export const portfolioProfile: PortfolioProfile = {
     },
     {
       company: 'Autodesk India Pvt Ltd',
+      shortName: 'Autodesk',
+      logo: 'autodesk',
       location: 'Bengaluru, Karnataka',
+      overview:
+        'Led IDC contributions to Storebox, a mission-critical platform for global storage and distribution of large software binaries.',
       roles: [
         {
           title: 'Senior Software Engineer',
@@ -203,7 +261,11 @@ export const portfolioProfile: PortfolioProfile = {
     },
     {
       company: 'SAP Labs India',
+      shortName: 'SAP Labs',
+      logo: 'sap',
       location: 'Bengaluru, Karnataka',
+      overview:
+        'Built lifecycle and high-availability capabilities for SAP Cloud Platform Integration during a multi-cloud containerization shift.',
       roles: [
         {
           title: 'Software Development Engineer',
@@ -218,7 +280,11 @@ export const portfolioProfile: PortfolioProfile = {
     },
     {
       company: 'Oracle India Pvt Ltd',
+      shortName: 'Oracle Cloud',
+      logo: 'oracle',
       location: 'Bengaluru, Karnataka',
+      overview:
+        'Started cloud infrastructure engineering work on Oracle Cloud Classic Load Balancer as a Service.',
       roles: [
         {
           title: 'Member of Technical Staff',
