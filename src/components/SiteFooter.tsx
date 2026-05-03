@@ -8,18 +8,15 @@ type SiteFooterProps = {
 export function SiteFooter({ education }: SiteFooterProps) {
   return (
     <footer id="education" className="site-footer" aria-labelledby="education-title">
-      <div className="education-heading">
+      <section className="education-panel" data-reveal>
         <span className="education-icon" aria-hidden="true">
           <GraduationCap size={24} />
         </span>
-        <div>
+        <div className="education-copy">
           <p className="eyebrow">Education</p>
-          <h2 id="education-title">Academic foundation</h2>
-          <p>{education.institution}</p>
+          <h2 id="education-title">{education.institution}</h2>
+          <p>{education.degree}</p>
         </div>
-      </div>
-      <div className="education-card">
-        <strong>{education.degree}</strong>
         <dl className="education-meta">
           <div>
             <dt>
@@ -36,7 +33,7 @@ export function SiteFooter({ education }: SiteFooterProps) {
             <dd>{education.period}</dd>
           </div>
         </dl>
-      </div>
+      </section>
     </footer>
   );
 }

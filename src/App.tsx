@@ -7,6 +7,7 @@ import { ImpactMetrics } from './components/ImpactMetrics';
 import { Navigation } from './components/Navigation';
 import { SiteFooter } from './components/SiteFooter';
 import { SkillsMatrix } from './components/SkillsMatrix';
+import { useScrollReveal } from './hooks/useScrollReveal';
 
 type Theme = 'light' | 'dark';
 
@@ -27,6 +28,7 @@ function getInitialTheme(): Theme {
 function App() {
   const { personal, hero, metrics, featuredWork, experience, skills, education } = portfolioProfile;
   const [theme, setTheme] = useState<Theme>(getInitialTheme);
+  useScrollReveal();
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -50,8 +52,8 @@ function App() {
 
       <main className="main-content">
         <ImpactMetrics metrics={metrics} />
-        <FeaturedSystems featuredWork={featuredWork} />
         <ExperienceTimeline experience={experience} />
+        <FeaturedSystems featuredWork={featuredWork} />
         <SkillsMatrix skills={skills} />
       </main>
 

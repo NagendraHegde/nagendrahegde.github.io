@@ -17,7 +17,7 @@ export function ImpactMetrics({ metrics }: ImpactMetricsProps) {
 
       <div className="metric-grid">
         {metrics.map((metric) => (
-          <article className="metric" key={metric.label}>
+          <article className="metric" key={metric.label} data-reveal>
             <strong>{metric.value}</strong>
             <span>{metric.label}</span>
             <p>{metric.description}</p>

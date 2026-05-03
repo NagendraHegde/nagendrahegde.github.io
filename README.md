@@ -2,7 +2,7 @@
 
 Personal portfolio website for Nagendra Hegde, built as a modern React-based portfolio from the latest resume content.
 
-The site highlights cloud infrastructure experience, OCI Compute work, featured systems, experience history, skills, education, and contact actions in a responsive single-page experience.
+The site highlights cloud infrastructure experience, OCI Compute work, featured projects, experience history, skills, education, and contact actions in a responsive single-page experience.
 
 ## Tech Stack
 

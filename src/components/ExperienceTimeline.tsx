@@ -22,7 +22,7 @@ export function ExperienceTimeline({ experience }: ExperienceTimelineProps) {
         summary="A compact chronology of cloud systems work across Oracle OCI, Autodesk, SAP Labs, and Oracle Cloud Classic."
       />
 
-      <div className="case-study-stage experience-stage">
+      <div className="case-study-stage experience-stage" data-reveal>
         <div className="case-study-selector" aria-label="Select company experience">
           {experience.map((company, index) => (
             <button

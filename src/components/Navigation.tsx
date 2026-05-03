@@ -7,8 +7,8 @@ type NavigationProps = {
 
 const sectionLinks = [
   { label: 'Impact', href: '#impact' },
-  { label: 'Featured Systems', href: '#featured-systems' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Featured Projects', href: '#featured-projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Education', href: '#education' },
 ];

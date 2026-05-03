@@ -17,7 +17,7 @@ export function SkillsMatrix({ skills }: SkillsMatrixProps) {
 
       <div className="skills-grid">
         {skills.map((group) => (
-          <article className="skill-group" key={group.category}>
+          <article className="skill-group" key={group.category} data-reveal>
             <h3>{group.category}</h3>
             <div className="tag-row">
               {group.items.map((item) => (

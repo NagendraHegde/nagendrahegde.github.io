@@ -13,16 +13,16 @@ export function FeaturedSystems({ featuredWork }: FeaturedSystemsProps) {
   const activeTitleId = `featured-${activeWork.name.toLowerCase().replace(/\s+/g, '-')}`;
 
   return (
-    <section id="featured-systems" className="section" aria-labelledby="featured-systems-title">
+    <section id="featured-projects" className="section" aria-labelledby="featured-projects-title">
       <SectionHeading
         eyebrow="Featured work"
-        title="Featured systems"
-        titleId="featured-systems-title"
+        title="Featured projects"
+        titleId="featured-projects-title"
         summary="Three current stories anchor the portfolio: AI-assisted diagnostics, GPU operations, and modern cloud administration."
       />
 
-      <div className="case-study-stage">
-        <div className="case-study-selector" aria-label="Select featured system">
+      <div className="case-study-stage" data-reveal>
+        <div className="case-study-selector" aria-label="Select featured project">
           {featuredWork.map((work, index) => (
             <button
               className="case-tab"

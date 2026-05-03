@@ -24,9 +24,9 @@ describe('App', () => {
     expect(nav).toBeInTheDocument();
 
     expect(screen.getByRole('link', { name: 'Impact' })).toHaveAttribute('href', '#impact');
-    expect(screen.getByRole('link', { name: 'Featured Systems' })).toHaveAttribute(
+    expect(screen.getByRole('link', { name: 'Featured Projects' })).toHaveAttribute(
       'href',
-      '#featured-systems',
+      '#featured-projects',
     );
     expect(screen.getByRole('link', { name: 'Experience' })).toHaveAttribute(
       'href',
@@ -36,9 +36,15 @@ describe('App', () => {
     expect(screen.getByRole('link', { name: 'Education' })).toHaveAttribute('href', '#education');
 
     expect(screen.getByRole('region', { name: /Impact metrics/i })).toBeInTheDocument();
-    expect(screen.getByRole('region', { name: /Featured systems/i })).toBeInTheDocument();
+    expect(screen.getByRole('region', { name: /Featured projects/i })).toBeInTheDocument();
     expect(screen.getByRole('region', { name: /Experience timeline/i })).toBeInTheDocument();
     expect(screen.getByRole('region', { name: /Skills matrix/i })).toBeInTheDocument();
+
+    const experience = screen.getByRole('region', { name: /Experience timeline/i });
+    const featuredProjects = screen.getByRole('region', { name: /Featured projects/i });
+    expect(experience.compareDocumentPosition(featuredProjects)).toBe(
+      Node.DOCUMENT_POSITION_FOLLOWING,
+    );
   });
 
   it('renders a concise career snapshot in the hero', () => {
@@ -81,7 +87,7 @@ describe('App', () => {
     expect(screen.getByRole('button', { name: /Switch to light mode/i })).toBeInTheDocument();
   });
 
-  it('formats featured systems as case studies with problem, approach, and impact', () => {
+  it('formats featured projects as case studies with problem, approach, and impact', () => {
     render(<App />);
 
     const vuffi = screen.getByRole('article', { name: /Vuffi/i });
@@ -120,5 +126,13 @@ describe('App', () => {
       'aria-pressed',
       'true',
     );
+  });
+
+  it('presents education as a single college-focused panel', () => {
+    render(<App />);
+
+    const education = screen.getByRole('contentinfo');
+    expect(within(education).getByRole('heading', { name: /SDM College/i })).toBeInTheDocument();
+    expect(within(education).queryByText(/Academic foundation/i)).not.toBeInTheDocument();
   });
 });
